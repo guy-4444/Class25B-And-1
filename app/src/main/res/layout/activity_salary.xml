@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalaryActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lbl_title"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingHorizontal="32dp"
+        app:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:background="#FFC107"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:text="Salary Calculator"
+        />
+
+    <EditText
+        android:id="@+id/edt_gross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lbl_title"
+        android:layout_marginTop="32dp"
+        android:ems="8"
+        android:textSize="24sp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="Gross Salary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_calculate"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/edt_gross"
+        app:strokeColor="@color/primary"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:text="calculate"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lbl_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginHorizontal="64dp"
+        android:paddingVertical="32dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:background="#444444"
+        android:textColor="@color/white"
+        android:text="0000"
+        />
+
+
+
+
+</RelativeLayout>

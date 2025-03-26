@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+
+
+        android:text="Hello World!"
+        android:background="#FFD34B"
+        android:textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/bye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/hi"
+        android:layout_alignStart="@id/hi"
+        android:layout_marginTop="16dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="32dp"
+
+        android:text="Bye"
+        android:background="#FF9800"
+        android:textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/bbbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="64dp"
+
+
+        android:text="BBBB"
+        android:background="#F44336"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/bbbb"
+        android:layout_toStartOf="@id/bbbb"
+        android:layout_marginBottom="32dp"
+
+        android:text="CCCC"
+        android:background="#03A9F4"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/bbbb"
+        android:layout_alignStart="@id/cc"
+
+        android:text="DD"
+        android:background="#4CAF50"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/lbl_title"
+        android:layout_alignStart="@id/lbl_title"
+        android:layout_alignEnd="@id/lbl_title"
+        android:layout_marginTop="16dp"
+
+
+        android:text="Hi"
+        android:background="#FFC107"
+        android:textSize="40sp"
+        />
+
+    <Button
+        android:id="@+id/btn_clickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me"/>
+
+</RelativeLayout>
