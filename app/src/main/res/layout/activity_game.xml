@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/black"
     tools:context=".GameActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -14,15 +14,96 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:background="#EFFFC9"
+        android:background="#4CAF50"
+        android:alpha="0.4"
          />
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lbl_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:text="000"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lbl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_flag"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:text="default-name"
+        android:textStyle="bold"/>
+
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_flag"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/img_fr" />
+        app:srcCompat="@drawable/img_empty"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_flag"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no"/>
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_heart1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/ic_heart"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_heart2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_heart"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_heart3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_heart"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 
